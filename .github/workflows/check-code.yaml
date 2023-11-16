@@ -17,3 +17,15 @@ jobs:
           whoami
           sleep 10
           pwd
+
+  welcome_script_in_parallel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome part
+        run: echo2 "Hello, guys 😅"
+      - name: Get info
+        run: |
+          echo "Getting comp info...."
+          whoami
+          sleep 10
+          pwd
