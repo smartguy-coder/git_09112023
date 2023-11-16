@@ -1,9 +1,12 @@
 def can_drive_car(age: int) -> bool:
     if age < 1:
-        raise ValueError('нема нікого молодше 1 року та старше 130 років')
+        raise ValueError("нема нікого молодше 1 року та старше 130 років")
     if age > 130:
-        raise ValueError('нема нікого молодше 1 року та старше 130 років')
-    print(f'{age+50=}')
+        raise ValueError("нема нікого молодше 1 року та старше 130 років")
+    print(f"{age+50=}")
+
+    list_var = ["1111111", "89898"]
+    print(list_var)
     # if age > 18:
     #     return True
     # return False

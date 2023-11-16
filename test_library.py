@@ -3,8 +3,22 @@ import pytest
 import library
 
 
+
+
+
+
+
+
+
+
+
 def test_not_can_drive_car():
     result = library.can_drive_car(15)
+    long_var = (
+        "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"
+        "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"
+    )
+    print(long_var)
     assert result is False
 
 
