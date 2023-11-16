@@ -1,6 +1,3 @@
-import json
-
-
 def can_drive_car(age: int) -> bool:
     if age < 1:
         raise ValueError("нема нікого молодше 1 року та старше 130 років")
