@@ -7,10 +7,10 @@ on:
 
 jobs:
   welcome_script:
-    runs-on: ubuntu-latest5
+    runs-on: ubuntu-latest
     steps:
       - name: Welcome part
-        run: echo "Hello, guys 😅"
+        run: echo2 "Hello, guys 😅"
       - name: Get info
         run: |
           echo "Getting comp info...."
