@@ -35,3 +35,4 @@ def test_not_can_drive_car_min():
 def test_can_drive_car_max():
     with pytest.raises(ValueError):
         library.can_drive_car(555)
+
