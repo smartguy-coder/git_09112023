@@ -7,7 +7,7 @@ on:
 
 jobs:
   welcome_script:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest5
     steps:
       - name: Welcome part
         run: echo "Hello, guys 😅"
