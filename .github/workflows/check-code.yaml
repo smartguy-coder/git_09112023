@@ -54,4 +54,4 @@ jobs:
           flake8 .
           pytest .
       - name: print secret
-        run: ${{ secrets.SECRET_KEY }}
+        run: echo "${{ secrets.SECRET_KEY }}"
