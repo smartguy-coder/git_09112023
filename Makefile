@@ -3,6 +3,7 @@ linter:
 	black .
 	isort .
 	flake8 .
+	pytest .
 
 info:
 	echo "Hello"
