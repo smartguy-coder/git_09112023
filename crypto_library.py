@@ -18,18 +18,7 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
 
 
 data = get_password_hash("password")
-verification = verify_password('password', data)
-
-
-
-
-
-
-
-
-
-
-
+verification = verify_password("password", data)
 
 
 def encode_md5(value: str) -> str:
