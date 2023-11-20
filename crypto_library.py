@@ -2,24 +2,23 @@ import hashlib
 
 from passlib.context import CryptContext
 
-context = CryptContext(schemes=['bcrypt'], deprecated='auto')
+context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
 def get_password_hash(value: str) -> str:
     hash = context.hash(value)
+    print(hash)
     return hash
 
 
-get_password_hash('password')
-get_password_hash('password')
-get_password_hash('password')
-get_password_hash('password')
-get_password_hash('password')
+def verify_password(plain_password: str, hashed_password: str) -> bool:
+    result = context.verify(plain_password, hashed_password)
+    print(result)
+    return result
 
 
-
-
-
+data = get_password_hash("password")
+verification = verify_password('password', data)
 
 
 
